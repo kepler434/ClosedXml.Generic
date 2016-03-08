@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("ClosedXml.Generic")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Generic İmport & Generic Export Excel")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Soner Kavlak")]
 [assembly: AssemblyProduct("ClosedXml.Generic")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
