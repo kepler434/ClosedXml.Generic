@@ -1,12 +1,12 @@
 # ClosedXml Generic Helper
  
-Uzun zamandır ihtiyaç duyduğumuz generic excel import ve export işlemleri artık bu kütüphane ile çok kolay.
+Generic Excel import and export processes are too easy by using this library. 
 
-  - Hazır classlarımız üzerinden çekilen dataları excel'e import etme
-  - Excel üzerindeki dataları classlarımız üzerinden export etme
-  - 1 den fazla sheet oluşturarak içine farklı datalar aktarabilme
-  
-Bütün bunları bu library üzerinden çok kolay yapabilirsiniz.
+- Importing the data from existing classes
+- Exporting the data from existing classes
+- More then one excel sheet create 
+
+You can accomplish all these tasks easily by using ClosedXml.Generic
  
 ### Installation
 
@@ -16,7 +16,7 @@ Nuget Package Manager Console
 Install-Package ClosedXml.Generic
 ```
 ### Use of
-Note: Excel import sırasında classlar üzerinde DisplayName boş bırakılırsa bu field altındaki datalar excel içerisine yüklenmez.
+Note: If DisplayName field is empty in anyone of the classes, data related to this field can not be loaded to excel file.
 
 ```sh
 ....
@@ -39,8 +39,8 @@ using System.ComponentModel.DataAnnotations;
         }
 ```
 
-Note: Tam tersi olan export işleminde ise Excel içerisinde bulunan başlıklarla classlar üzerinde bulunan DisplayName alanları eşleştirilerek data aktarımı sağlanmaktadır.
-
+Note: Export Process during; Excel title match class displayName data transfered is done
+ 
 ### Version
 
 1.0.0
@@ -48,4 +48,4 @@ Note: Tam tersi olan export işleminde ise Excel içerisinde bulunan başlıklar
 ### Development
 
 C#
-   
+  
