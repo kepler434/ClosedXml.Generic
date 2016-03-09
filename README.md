@@ -41,7 +41,8 @@ using System.ComponentModel.DataAnnotations;
 
 Note: Tam tersi olan export işleminde ise Excel içerisinde bulunan başlıklarla classlar üzerinde bulunan DisplayName alanları eşleştirilerek data aktarımı sağlanmaktadır.
 
- ### Version
+### Version
+
 1.0.0
 
 ### Development
