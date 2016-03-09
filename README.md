@@ -39,7 +39,7 @@ using System.ComponentModel.DataAnnotations;
         }
 ```
 
-Note: Export Process during; Excel title match class displayName data transfered is done
+Note: Data transfer is completed by matching excel titles and class DisplayName's during export process
  
 ### Version
 
