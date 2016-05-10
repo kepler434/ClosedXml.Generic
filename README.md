@@ -62,7 +62,7 @@ Note: Data transfer is completed by matching excel titles and class DisplayName'
 
 
 
-##New Version Dictionary Object
+##New Version Dictionary List Object
 
 ```sh
 ....
@@ -70,25 +70,24 @@ using System.ComponentModel.DataAnnotations;
 ..... 
         static void Main(string[] args)
         {
-            List<MyClassName> data = new List<MyClassName>();
-            data.Add(new MyClassName()
+            List<Dictionary<string, object>> dictionary = new List<Dictionary<string, object>>();
+            for (int i = 0; i < 9; i++)
             {
-                ID = 11,
-                Name = "Soner ",
-                LastName = "Kavlak"
-            });
-        
-            Dictionary<string, object> dictobj = new Dictionary<string, object>();
-            dictobj.Add("Sheet1", data);
-            
-             ClosedXml.Generic.ClosedXmlGenericManager.Export(dictobj, "C:\MyExcel");
+                Dictionary<string, object> dict = new Dictionary<string, object>();
+                dict.Add("cat", i + 5);
+                dict.Add("dog", "deneme"+i);
+                dict.Add("llama", i + 2.5);
+                dict.Add("iguana", i + 8);
+                dictionary.Add(dict);
+           }
+           ClosedXml.Generic.ClosedXmlGenericManager.Export("Sheet1", dictionary, "C:\MyExcel"); 
         }  
 ```
  
  
 ### Version
 
-1.0.2
+1.0.4
 
 ### Development
 
